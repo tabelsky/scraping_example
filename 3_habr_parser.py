@@ -6,12 +6,12 @@ HOST = 'https://habr.com'
 ARTICLES = f'{HOST}/ru/all/'
 
 
-def get_heders():
+def get_headers():
     return Headers(browser='firefox', os='win').generate()
 
 
 def get_text(url):
-    return requests.get(url, headers=get_heders()).text
+    return requests.get(url, headers=get_headers()).text
 
 
 def parse_article(article_tag):
