@@ -50,7 +50,7 @@ if __name__ == "__main__":
             driver,
             delay_seconds=20,
             by=By.XPATH,
-            value=f"//div[@class='tm-articles-list']//article[{i}]//div//div//div//span[2]//time",
+            value=f"//div[@class='tm-articles-list']//article[{i}]//div[1]//div[1]//div//span//span//span//time",
         )
         #  про XPATH https://www.guru99.com/xpath-selenium.html
         time = time_element.accessible_name
